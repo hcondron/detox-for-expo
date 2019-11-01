@@ -266,7 +266,7 @@ class AppleSimUtils {
   }
 
   _joinLaunchArgs(launchArgs) {
-    return _.map(launchArgs, (v, k) => `-${k} "${v}"`).join(' ').trim();
+     return _.map(launchArgs, (v, k) => `-${k} ${v}`).join(' ').trim();
   }
 
   async _launchMagically(frameworkPath, udid, bundleId, launchArgs, languageAndLocale) {
